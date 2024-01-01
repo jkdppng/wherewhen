@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wherewhen</title>
 
-    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet.js map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 </head>
 <body>
+    <!-- js -->
+    <script src="clock.js"></script>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
     <!-- title, logo -->
     <main>
         <h1>Wherewhen</h1>
     </main>
 
     <!-- map -->
-    <div>
-        <p>map</p>
-    </div>
+    <div id="map"></div>
+    <!-- <script src="map.js"></script> -->
+    <script src="location.js"></script>
 
     <!-- time -->
-    <div>
-        <script src="clock.js"></script>
-        <div id="clock">
-            <h1 id="date-time"></h1>
-        </div>
+    <div id="clock">
+        <h1 id="date-time"></h1>
     </div>
 
     <!-- time in, time out (prompt login if not logged in)-->
